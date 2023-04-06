@@ -46,10 +46,10 @@
 </div>
 
 <div class="col-md-5">
-
-    {% if flag=="True" %}   
+ 
     <h2>Delivery Options</h2>
-{% raw %}
+    {% if flag=="True" %}  
+       {% raw %}
     <form name="deliveryOptions" ng-controller="FormController as formCtrl" ng-submit="deliveryOptions.$valid && validateDelivery()" novalidate>
         <label>How would you like to receive your order?</label><br>
 
